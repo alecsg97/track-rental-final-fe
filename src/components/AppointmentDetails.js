@@ -74,7 +74,6 @@ export default function AppointmentDetails({fetchAppointments, theUser}){
                 <h3>Last Name: {theAppointment.lastName}</h3>
                 <h3>Contact Email: {theAppointment.email}</h3>
                 <h3>Contact Phone: {theAppointment.phone}</h3>
-                <h3>Car: {theAppointment.whichCar}</h3>
                 <h3>Rental Duration: {theAppointment.time}</h3>
 
                 <br></br>

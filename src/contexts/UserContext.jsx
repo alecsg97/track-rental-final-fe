@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
 
 	const getUserInfo = () => {
 		axios
-			.get("http://localhost:4200/serializeuser", {
+			.get("http://localhost:4200/auth/serializeuser", {
 				withCredentials: true,
 			})
 			.then((response) => {
@@ -27,7 +27,7 @@ export const UserProvider = ({ children }) => {
 
 	const logout = () => {
 		axios
-			.post("http://localhost:4200/logout", {}, { withCredentials: true })
+			.post("http://localhost:4200/auth/logout", {}, { withCredentials: true })
 			.then((response) => {
 				console.log(response.data);
 				if (response.data.message === "successfully logged out")

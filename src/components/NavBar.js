@@ -1,20 +1,23 @@
 import { dblClick } from '@testing-library/user-event/dist/click';
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, Route, Routes } from "react-router-dom";
 import "../App.css";
 import UserContext from '../contexts/UserContext';
+import {useState, useEffect, useContext} from "react";
 import "../navbar.css"
 
 
 const NavBar = () => {
-
+  const { theUser, logout } = useContext(UserContext)
   return (
     <div className="navbar">
     <nav>
     <div
         className="navigation-menu">
       <ul>
-        <li><Link to ="/login">Login</Link></li>
+     
+      {!theUser && <li><Link to ="/login">Login</Link></li>}
+      {theUser && <li onClick={()=>{logout()}}><Link>Log Out</Link></li>}
         
         <li><Link to ="/gallery">Gallery</Link></li>
 

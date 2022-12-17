@@ -1,12 +1,17 @@
 import "../App.css";
 import {useParams} from "react-router-dom";
-import {useState, useEffect} from "react";
+import {useState, useEffect, useContext} from "react";
 import axios from "axios";
 import EditService from "./EditService";
 import { Link } from "react-router-dom";
+import UserContext from "../contexts/UserContext";
 
 
-export default function ServiceDetails({fetchServices, theUser}){
+export default function ServiceDetails({fetchServices}){
+
+    const { theUser } = useContext(UserContext)
+
+console.log(theUser)
     const {id} = useParams();
 //EDIT
     const [editing, setEditing] = useState(null);

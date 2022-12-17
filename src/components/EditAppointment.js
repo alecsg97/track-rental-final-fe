@@ -43,7 +43,7 @@ export default function EditAppointment({appointment, stopEditing, fetchAppointm
     return(
         <div> 
            <div>
-            <p><button onClick={endEdit}>X</button></p>
+            <p><button className="fancyButton" onClick={endEdit}>Go Back</button></p>
 
             <div>
             First Name:
@@ -67,10 +67,6 @@ export default function EditAppointment({appointment, stopEditing, fetchAppointm
                 <input value={formState.phone} onChange={(e)=>{updateInput(e, "phone")}} />
             </div>
 
-            <div>
-            Car you will be using:
-                <input value={formState.whichCar} onChange={(e)=>{updateInput(e, "whichCar")}} />
-            </div>
 
             <div>
             Time:
@@ -80,7 +76,7 @@ export default function EditAppointment({appointment, stopEditing, fetchAppointm
 
             </div>
 
-            <button onClick={submitForm}>Submit</button>
+            <button className="fancyButton" onClick={submitForm}>Submit</button>
         </div>
     )
 }

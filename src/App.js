@@ -64,7 +64,7 @@ function App(props) {
       
       <UserProvider>
    
-      <NavBar />
+      <NavBar/>
 
       <Routes>
       <Route path="/" element = {<Home />} />
@@ -82,9 +82,9 @@ function App(props) {
 
             <Route path="/appointments/:id" element = {<AppointmentDetails />} />
 
-            <Route path="/login" element = {<SignupOrLogin action="login" />} />
             <Route path="/signup" element = {<SignupOrLogin action="signup" />} />
 
+            <Route path="/login" element = {<SignupOrLogin action="login" />} />
 
             {/* PAGE ROUTES */}
             <Route path="/about" element = {<About />} />

@@ -59,6 +59,8 @@ console.log(serviceList);
                 </label>
                 <input className="form-control" type="text" value={formState.firstName} onChange={(e)=>{updateInput(e,"firstName")}} />
             </div>
+            <br></br>
+            <br></br>
 
             <div>
                 <label className="form-label">
@@ -66,6 +68,8 @@ console.log(serviceList);
                 </label>
                 <input className="form-control"  type="text" value={formState.lastName} onChange={(e)=>{updateInput(e,"lastName")}} />
             </div>
+            <br></br>
+            <br></br>
 
             <div>
                 <label className="form-label">
@@ -73,6 +77,8 @@ console.log(serviceList);
                 </label>
                 <input className="form-control" type="text" value={formState.email} onChange={(e)=>{updateInput(e,"email")}} />
             </div>
+            <br></br>
+            <br></br>
 
             <div>
             <label className="form-label">
@@ -80,6 +86,8 @@ console.log(serviceList);
                 </label>
                 <input className="form-control" type="text" value={formState.phone} onChange={(e)=>{updateInput(e,"phone")}} />
             </div>
+            <br></br>
+            <br></br>
 
             <div>
             <label className="form-label">
@@ -89,20 +97,25 @@ console.log(serviceList);
                 {serviceList}
                 </select>
             </div>
+            <br></br>
+            <br></br>   
 
             <div>
             <label className="form-label">
-                Appointment Date:
+                Track Rental Date:
                 </label>
                 <input className="form-control" type="date" value={formState.date} onChange={(e)=>{updateInput(e,"date")}} />
             </div>
+            <br></br>
+            <br></br>
 
             <div>
             <label className="form-label">
-                Appointment Time:
+                Track Rental Duration:
                 </label>
                 <input className="form-control" type="text" value={formState.time} onChange={(e)=>{updateInput(e,"time")}} />
             </div>
+            <br></br>
           <br></br>
             <center><button className="fancyButton" onClick={submitForm}>Submit Track Rental</button></center>
         </div>
