@@ -19,7 +19,7 @@ const NavBar = () => {
       {!theUser && <li><Link to ="/login">Login</Link></li>}
       {theUser && <li onClick={()=>{logout()}}><Link>Log Out</Link></li>}
         
-        <li><Link to ="/gallery">Gallery</Link></li>
+        <li><Link to ="/gallery">Track Partners</Link></li>
 
         <li><Link to ="/appointments">Book a Track</Link></li>
 

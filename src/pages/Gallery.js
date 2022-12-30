@@ -57,9 +57,9 @@ this.setState({
   </div>
 </div>
         <br/>
-            <button className="fancyButton" onClick={this.onClickPrevious}> Previous </button>
-            <br></br>
             <button className="fancyButton" onClick={this.onClickNext}> Next </button>
+            <br></br>
+            <button className="fancyButton" onClick={this.onClickPrevious}> Previous </button>
             </center>
 
       </div>
